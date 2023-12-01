@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./styles/style.css"> server -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tomorrow-night-blue.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@400;700&family=PT+Sans&family=Raleway:wght@400;700&family=Rubik:wght@300;400;500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="container">
+      <nav>
+        <a href="https://github.com/DoctorL00" target="_blank"><img src="SVGs/github.svg" alt="" /></a> 
+
+        <a href="https://libyantourism.netlify.app/" target="_blank">
+          Preview
+          <img src="SVGs/up-right-from-square-solid.svg" alt="" />
+        </a>
+      </nav>
+
+      <div>
+        <h1>Welcome to simplest Web public API ever !</h1>
+      </div>
+
+      <div class="overview des-block">
+        <h3>Overview</h3>
+        <div class="content">
+          <p>
+            <strong>API</strong> that returns 15 places via places endpoint, which are
+            some of the most beautiful Tourist places to visit in Libya!
+          </p>
+        </div> 
+      </div>
+
+      <div class="code-example des-block">
+        <h3>Code</h3>
+        <div class="content">
+          <p>Here is simple example using fetch API in JS, feel free to use other libraries like axios
+            or any other language.</p>
+          <pre>
+            <code class="language-javascript" style="border-radius: 15px;">fetch('https://libyantourismapi.netlify.app/places').
+then(res => res.json()).
+then(data => console.log(data));
+            </code>
+        </pre> 
+        </div>
+      </div>
+
+
+
+      <div class="footer"> <small>Built with Express.js</small></div>
+
+    </div>
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

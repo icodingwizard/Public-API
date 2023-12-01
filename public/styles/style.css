@@ -1,0 +1,105 @@
+
+:is(*,::after,::before){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0c0425;
+    font-family: Ubuntu;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+
+.container {
+    padding: 50px 50px 0px 50px;
+    max-width: 1300px;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a:last-child {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 50vh;
+    transition: all .2s;
+}
+
+nav a:last-child:hover {
+    background-color: #5b50ff;
+}
+
+nav a:last-child img {
+    width: 20px;
+    margin-left: 5px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+nav a:first-child > img {
+    width: 30px;
+    margin-right: 5px;
+    transition: all .2s;    
+}
+
+nav a:last-child:hover img {
+    opacity: 1;
+}
+
+
+.container > div:first-of-type {
+    padding-block: 200px;
+    text-align: center;
+}
+
+h3 {
+    color: #0c0425;
+    background-color: #c0c9ff;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.des-block {
+    margin-block: 10px;
+}
+
+.des-block p {
+    max-width: 75ch;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+.des-block .content {
+    margin-top: 10px;
+}
+
+code {
+    width: fit-content;
+}
+
+.footer {
+   font-style: italic;
+   padding: 5px;
+}
